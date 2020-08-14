@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntoSpace", "IntoSpace\IntoSpace.vcxproj", "{679B7C84-3689-4377-8FF0-32B69930FC04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2B4B5D69-94DD-4AF5-A4DA-DCAE52627632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Debug|x64.ActiveCfg = Debug|x64
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Debug|x64.Build.0 = Debug|x64
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Debug|x86.ActiveCfg = Debug|Win32
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Debug|x86.Build.0 = Debug|Win32
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Release|x64.ActiveCfg = Release|x64
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Release|x64.Build.0 = Release|x64
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Release|x86.ActiveCfg = Release|Win32
+		{679B7C84-3689-4377-8FF0-32B69930FC04}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{679B7C84-3689-4377-8FF0-32B69930FC04} = {2B4B5D69-94DD-4AF5-A4DA-DCAE52627632}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C452A53C-F4B5-465A-B013-A0E4537AD24E}
+	EndGlobalSection
+EndGlobal
