@@ -1,22 +1,25 @@
-#pragma once
-const int DEFAULT_LIVES = 3;
+#ifndef PLAYER_H
+#define PLAYER_H
+#include "constants.h" // player constants
 class Player
 {
 private:
-	int lives; 
-	float x, y, velX, velY;
+	int m_lives; 
+	float m_x, m_y, m_velocityX, m_velocityY;
 
 public:
 	Player(float x = 0, float  y = 0, float  velX = 0, float  velY = 0);
 	~Player();
-	void set_x(float x);
-	void set_y(float y);
-	void set_pos(float x, float y);
-	void set_velX(float velX);
-	void set_velY(float velY);
-	void remove_life();
-	void add_life();
-	void render();
-	void update();
+	void SetX(float x);
+	void SetY(float y);
+	void SetPos(float x, float y);
+	void SetVelocityX(float velocityY);
+	void SetVelocityY(float velocityY);
+	void RemoveLife();
+	void AddLife();
+	void Render();
+	void Update();
 };
 
+#endif // !PLAYER_H
+	

@@ -2,64 +2,64 @@
 
 Player::Player(float x, float y, float velX, float velY)
 {
-	set_x(x);
-	set_y(y);
-	set_velX(velX);
-	set_velY(velY);
-	lives = DEFAULT_LIVES;
+	SetX(x);
+	SetY(y);
+	SetVelocityX(velX);
+	SetVelocityY(velY);
+	m_lives = DEFAULT_LIVES;
 }
 
 Player::~Player()
 {
 }
 
-void Player::set_x(float x)
+void Player::SetX(float x)
 {
-	this->x = x > 0 ? x : 0; // assert x > 0.
+	this->m_x = x > 0 ? x : 0; // assert x > 0.
 }
 
-void Player::set_y(float y)
+void Player::SetY(float y)
 {
-	this->y = y > 0 ? y : 0; // assert y > 0
+	this->m_y = y > 0 ? y : 0; // assert y > 0
 }
 
-void Player::set_pos(float x, float y)
+void Player::SetPos(float x, float y)
 {
-	set_x(x);
-	set_y(y);
+	SetX(x);
+	SetY(y);
 }
 
-void Player::set_velX(float velX)
+void Player::SetVelocityX(float velX)
 {
-	this->velX = velX;
+	this->m_velocityX = velX;
 }
 
-void Player::set_velY(float velY)
+void Player::SetVelocityY(float velY)
 {
-	this->velY = velY;
+	this->m_velocityY = velY;
 }
 
-void Player::remove_life()
+void Player::RemoveLife()
 {
-	if (lives > 0)
-		lives--;
+	if (this->m_lives > 0)
+		this->m_lives--;
 }
 
-void Player::add_life()
+void Player::AddLife()
 {
-	lives++;
+	this->m_lives++;
 }
 
-void Player::render()
+void Player::Render()
 {
 	// add rendering for player model
 }
 
-void Player::update()
+void Player::Update()
 {
 	// update player object
-	this->x += velX;
-	this->y += velY;
+	this->m_x += m_velocityX;
+	this->m_y += m_velocityY;
 }
 
 
